@@ -19,7 +19,7 @@ var basicDown = basic.toLowerCase()
 console.log(basic, basicUp, basicDown)
 
 var word = "banana" //07
-var letters = word.split()
+var letters = word.split("")
 console.log(letters)
 
 var age = 35 //08
@@ -31,9 +31,9 @@ var testsubstring = "I'm very long !"
 testsubstring = testsubstring.substring(2, 10)
 console.log(testsubstring)
 
-var guillemets = 'I\'m very long !'
+var guillemets = 'I\'m very "long" !'
 console.log(guillemets)
-var doublequotes = "I\"m very long !"
+var doublequotes = "I'm very \"long\" !"
 console.log(doublequotes)
 var DeuxLignes = "I'm very \n long !"
 console.log(DeuxLignes)
@@ -42,3 +42,10 @@ var changed = "Bonjour"
 changed = changed.replace("o", "a")
 changed = changed.replace("o", "a")
 console.log(changed)
+
+//Exemples
+
+var sentence = `
+Je suis sur la premiere ligne
+    je suis sur la deuxieme ligne`
+console.log(sentence)
